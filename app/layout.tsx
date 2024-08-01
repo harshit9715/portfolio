@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href="/icons/logo.svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
