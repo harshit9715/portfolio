@@ -85,6 +85,7 @@ export const BentoGridItem = ({
         <div className="absolute size-full">
           {img && (
             <Image
+              loading="eager"
               src={img}
               alt={img}
               width={540}
