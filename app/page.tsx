@@ -1,12 +1,14 @@
+import dynamicLoad from "next/dynamic";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
-import Clients from "@/components/Clients";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
-import Footer from "@/components/Footer";
+
+const RecentProjects = dynamicLoad(() => import("@/components/RecentProjects"));
+const Clients = dynamicLoad(() => import("@/components/Clients"));
+const Experience = dynamicLoad(() => import("@/components/Experience"));
+const Approach = dynamicLoad(() => import("@/components/Approach"));
+const Footer = dynamicLoad(() => import("@/components/Footer"));
 
 const Home = () => {
   return (
