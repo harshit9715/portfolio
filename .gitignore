@@ -17,6 +17,10 @@
 # production
 /build
 
+# build output
+*.log
+bun.lockb
+
 # misc
 .DS_Store
 *.pem
